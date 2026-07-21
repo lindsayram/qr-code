@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --text:hsl(216, 15%, 48%);
+    --h1color: hsl(218, 44%, 22%);
+    --bg:hsl(212, 45%, 89%);
+    --bg-card: hsl(0, 0%, 100%);
+    --primaryfont: "Outfit", sans-serif;
+}
+
+/* Général */
+
+*{
+    margin: 0;
+}
+
+/* Desktop */
+
+main{
+    
+    max-width: 1440px;
+
+    section{
+        background-color: var(--bg);
+        padding: 50px;
+
+        article{
+            background-color: var(--bg-card);
+            text-align: center;
+            margin: 50px auto;
+            max-width: 236px;
+            border-radius: 15px;
+            padding: 12px 12px 25px 12px;
+
+            img{
+                object-fit: cover;
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            h1{
+                color: var(--h1color);
+                font-weight: 700;
+                font-family: var(--primaryfont);
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            p{
+                color: var(--text);
+                font-weight: 400;
+                font-family: var(--primaryfont);
+                font-size: 13px;
+            }
+        }
+    }
+}
